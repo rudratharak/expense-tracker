@@ -1,6 +1,6 @@
 import json
+import os
 
-exp=[]
 def add_():
     try:
       amount=float(input("enter the amount spent:"))
@@ -35,8 +35,14 @@ def view_expense(exp1):
 def save_expense(exp):
   with open("expense.json","w") as f:
     json.dump(exp,f)
-  
 
+def load_expenses():
+    if os.path.exists("expense.json"):
+        with open("expense.json","r") as f:
+            return json.load(f)
+    return []
+
+exp = load_expenses()
 #menu 
 
 choices = {
