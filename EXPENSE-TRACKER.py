@@ -22,10 +22,10 @@ def add_():
 
 def add_expense(exp):
    E=add_()
-  if E is not None:
+   if E is not None:
     exp.append(E)
     save_expense(exp)
-  return None
+   return None
 
 def view_expense(exp1):
     for i in exp1:
