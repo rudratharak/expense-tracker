@@ -15,7 +15,7 @@ A simple command-line expense tracker written in Python.
 Requires Python 3.
 
 ```
-python main.py
+python EXPENSE-TRACKER.py
 ```
 
 Menu:
@@ -28,7 +28,7 @@ Menu:
 
 ## Project structure
 
-- `main.py` - the program
+- `EXPENSE-TRACKER.py` - the program
 - `expense.json` - saved data (created when you add an expense; ignored by git)
 
 ## Planned
